@@ -1,0 +1,20 @@
+<NetworkConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/ServiceHosting/2011/07/NetworkConfiguration">
+  <VirtualNetworkConfiguration>
+    <Dns />
+    <VirtualNetworkSites>
+      <VirtualNetworkSite name="SP2010VN" AffinityGroup="SP2010AffinityGroup">
+        <AddressSpace>
+          <AddressPrefix>10.10.0.0/16</AddressPrefix>
+        </AddressSpace>
+        <Subnets>
+          <Subnet name="DCNET">
+            <AddressPrefix>10.10.1.0/24</AddressPrefix>
+          </Subnet>
+          <Subnet name="SPNET">
+            <AddressPrefix>10.10.2.0/24</AddressPrefix>
+          </Subnet>
+        </Subnets>
+      </VirtualNetworkSite>
+    </VirtualNetworkSites>
+  </VirtualNetworkConfiguration>
+</NetworkConfiguration>
